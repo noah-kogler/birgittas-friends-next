@@ -22,5 +22,15 @@
 
   "crowdfunding_part_1": "Bitte unterstütze unsere <0>“Kickstarter” crowdfunding Kompagne</0> bis 18. April 2021! Das ermöglicht uns, eine faire Entlohnung für die Post-Produktion und erlaubt uns das the Digital Cinema Package (DCP) fertig zu stellen um “Birgitta’s Friends” in die Kinos zu bringen.",
   "crowdfunding_part_2": "Wir verlassen uns auf dich! Jeder Betrag hilft!",
-  "crowdfunding_link_title": "Kickstarter crowdfunding"
+  "crowdfunding_link_title": "Kickstarter crowdfunding",
+
+  "credits_header": "Credits",
+  "credits_concept_production": "Konzept, Produktion:",
+  "credits_edit": "Edit:",
+  "credits_camera": "Kamera:",
+  "credits_sound": "Sound Konzept und Mixing:",
+  "credits_subtitles": "Untertitel:",
+  "credits_music": "Musik:",
+  "credits_post_production": "Post Production Colour:",
+  "credits_post_support": "Das „Birgitta's Friends“-Projekt wäre nicht möglich gewesen ohne der Unterstützung von:"
 }

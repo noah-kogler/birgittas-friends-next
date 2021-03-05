@@ -8,9 +8,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html prefix="og: https://ogp.me/ns#">
+      <Html prefix="og: https://ogp.me/ns#" className="h-full">
         <Head />
-        <body>
+        <body className="h-full p-0 bg-black">
         <Main />
         <NextScript />
         </body>
