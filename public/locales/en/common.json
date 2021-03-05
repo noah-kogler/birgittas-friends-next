@@ -1,13 +1,26 @@
 {
   "title": "Birgitta's Friends",
   "subtitle": "border – crossings",
+
   "meta_author": "Movie: Christian Kogler, Website: Noah Kogler",
   "meta_description": "Documentary movie about friendship, Israel, Palestina, peace, history.",
+
   "change-locale": "auf Deutsch",
-  "contact": "Contact",
+
+  "contact_header": "Contact",
   "contact_name": "Christian Kogler",
   "contact_company": "Pädagogische Hochschule Oberösterreich",
   "contact_street": "Kaplanhofstraße 40",
   "contact_city": "4020 Linz",
-  "contact_country": "Austria"
+  "contact_country": "Austria",
+
+  "description_part1": "An Austrian woman, whose years in Israel have an important impact on her life. Five friends, who couldn't be more different in life experience and view of the world and who are  connected only by their friendship with Birgitta.",
+  "description_part2": "From Mohammed, in Palestinan resistance since his childhood, to Noah, holocaust survivor and conservative Zionist. A meeting, a “naive” plan - “Birgitta's Friends”,",
+  "description_part3": "a documentary film by Christian Kogler.",
+
+  "crowdfunding_header": "We need your help!",
+
+  "crowdfunding_part_1": "Please support our <0>“Kickstarter” crowdfunding campaign</0> until 18. April 2021! This will enable us to provide a fair share for the post production team and to get the Digital Cinema Package (DCP) ready to be able to view “Birgitta’s Friends” in cinemas.",
+  "crowdfunding_part_2": "We depend on you! Every amount helps!",
+  "crowdfunding_link_title": "Kickstarter crowdfunding"
 }
