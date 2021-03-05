@@ -12,7 +12,7 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {
-      'md': '820px', // h1 line breaks at 819px
+      'md': '947px', // h1 line breaks at 946px
     },
     extend: {
       fontSize: {
