@@ -18,6 +18,8 @@ export default function Home(host) {
   const router = useRouter()
   const { t } = useTranslation('common')
 
+  const urlRoot = getUrlRoot();
+
   return (
     <>
       <Head>
@@ -27,10 +29,10 @@ export default function Home(host) {
         <meta name="author" content={t('meta_author')} />
         <meta property="og:title" content={t('title')} />
         <meta property="og:type" content="video.movie" />
-        <meta property="og:image" content={router.asPath + ogImage} />
-        <link rel="canonical" href={router.asPath} />
-        <link rel="alternate" href={router.asPath} hrefLang="x-default"/>
-        <link rel="alternate" href={router.asPath + 'de'} hrefLang="de"/>
+        <meta property="og:image" content={urlRoot + ogImage} />
+        <link rel="canonical" href={urlRoot} />
+        <link rel="alternate" href={urlRoot} hrefLang="x-default"/>
+        <link rel="alternate" href={urlRoot + 'de'} hrefLang="de"/>
       </Head>
       <div className="w-full min-h-full bg-img bg-imgcolor bg-imgheight bg-top max-w-img bg-no-repeat">
         <div className="mx-auto w-3/4 max-w-4xl">
@@ -167,4 +169,13 @@ export default function Home(host) {
       </div>
     </>
   )
+}
+
+function getUrlRoot() {
+  if (!window) return
+  return window.location.protocol
+    + "//"
+    + window.location.hostname
+    + (window.location.port ? ':' + window.location.port: '')
+    + '/';
 }
