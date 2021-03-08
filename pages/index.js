@@ -7,18 +7,20 @@ import { Trans } from 'react-i18next';
 import ogImage from './../public/images/sunset.png'
 
 export async function getStaticProps({ locale }) {
+  const canonicalUrl = 'https://www.birgittasfriends.com';
+
   return {
     props: {
-    ...await serverSideTranslations(locale, ['common'])
-    }
+      ...await serverSideTranslations(locale, ['common']),
+      canonicalUrl,
+      ogImagePath: canonicalUrl + ogImage,
+    },
   };
 }
 
-export default function Home(host) {
+export default function Home({canonicalUrl, ogImagePath}) {
   const router = useRouter()
   const { t } = useTranslation('common')
-
-  const urlRoot = getUrlRoot();
 
   return (
     <>
@@ -29,10 +31,10 @@ export default function Home(host) {
         <meta name="author" content={t('meta_author')} />
         <meta property="og:title" content={t('title')} />
         <meta property="og:type" content="video.movie" />
-        <meta property="og:image" content={urlRoot + ogImage} />
-        <link rel="canonical" href={urlRoot} />
-        <link rel="alternate" href={urlRoot} hrefLang="x-default"/>
-        <link rel="alternate" href={urlRoot + 'de'} hrefLang="de"/>
+        <meta property="og:image" content={ogImagePath} />
+        <link rel="canonical" href={canonicalUrl} />
+        <link rel="alternate" href={canonicalUrl} hrefLang="x-default"/>
+        <link rel="alternate" href={canonicalUrl + '/de'} hrefLang="de"/>
       </Head>
       <div className="w-full min-h-full bg-img bg-imgcolor bg-imgheight bg-top max-w-img bg-no-repeat">
         <div className="mx-auto w-3/4 max-w-4xl">
@@ -100,7 +102,7 @@ export default function Home(host) {
                 <div className="md:w-1/2 md:text-right md:pr-4 font-thin">{t('credits_camera')}</div>
                 <div className="md:w-1/2 md:text-left md:pr-2">
                   <a className="inline-block align-middle" href="https://menielias.com/" title="Unicorn Films"><img
-                    className="w-20" src="images/logos/unicorn_films.png" alt="Unicorn Films"/></a>
+                    className="w-20" src="/images/logos/unicorn_films.png" alt="Unicorn Films"/></a>
                   <span className="ml-2">Meni Elias</span>
                 </div>
               </div>
@@ -108,7 +110,7 @@ export default function Home(host) {
                 <div className="md:w-1/2 md:text-right md:pr-4 font-thin">{t('credits_sound')}</div>
                 <div className="md:w-1/2 md:text-left md:pr-2">
                   <a className="inline-block align-middle" href="https://www.luftrausch.at/" title="luftrausch.at"><img
-                    className="w-16" src="images/logos/luftrausch.svg" alt="luftrausch"/></a>
+                    className="w-16" src="/images/logos/luftrausch.svg" alt="luftrausch"/></a>
                   <span className="md:ml-6">Thomas Voglreiter</span>
                 </div>
               </div>
@@ -116,7 +118,7 @@ export default function Home(host) {
                 <div className="md:w-1/2 md:text-right md:pr-4 font-thin">{t('credits_subtitles')}</div>
                 <div className="md:w-1/2 md:text-left md:pr-2 pt-2 md:pt-0">
                   <a className="inline-block align-middle" href="http://www.sesamedia.at/" title="sesamedia.at"><img
-                    className="w-20" src="images/logos/sesamedia.png" alt="sesamedia"/></a>
+                    className="w-20" src="/images/logos/sesamedia.png" alt="sesamedia"/></a>
                   <span className="ml-2">Udo Somma</span>
                 </div>
               </div>
@@ -142,13 +144,13 @@ export default function Home(host) {
               </div>
               <div className="flex justify-center mt-4">
                 <a href="https://www.land-oberoesterreich.gv.at/kultur.htm" title="Land Oberösterreich - Kultur">
-                  <img className="w-24 m-4" src="images/logos/kultur_land_ooe.png" alt="Land Oberösterreich - Kultur"/>
+                  <img className="w-24 m-4" src="/images/logos/kultur_land_ooe.png" alt="Land Oberösterreich - Kultur"/>
                 </a>
                 <a href="https://www.linz.at/kultur/index.php" title="Linz - Kultur">
-                  <img className="w-24 m-4" src="images/logos/linz_kultur.png" alt="Linz - Kultur"/>
+                  <img className="w-24 m-4" src="/images/logos/linz_kultur.png" alt="Linz - Kultur"/>
                 </a>
                 <a href="https://www.wasns.org/" title="Wahat al-Salam Neve Shalom">
-                  <img className="w-24 m-4" src="images/logos/neve_shalom.png" alt="Wahat al-Salam Neve Shalom"/>
+                  <img className="w-24 m-4" src="/images/logos/neve_shalom.png" alt="Wahat al-Salam Neve Shalom"/>
                 </a>
               </div>
             </article>
@@ -169,13 +171,4 @@ export default function Home(host) {
       </div>
     </>
   )
-}
-
-function getUrlRoot() {
-  if (!window) return
-  return window.location.protocol
-    + "//"
-    + window.location.hostname
-    + (window.location.port ? ':' + window.location.port: '')
-    + '/';
 }
