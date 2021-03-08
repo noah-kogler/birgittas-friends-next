@@ -27,8 +27,10 @@ export default function Home(host) {
         <meta name="author" content={t('meta_author')} />
         <meta property="og:title" content={t('title')} />
         <meta property="og:type" content="video.movie" />
-        <meta property="og:image" content={ogImage} />
-        <link rel="canonical" href="https://www.birgittasfriends.com" />
+        <meta property="og:image" content={router.asPath + ogImage} />
+        <link rel="canonical" href={router.asPath} />
+        <link rel="alternate" href={router.asPath} hrefLang="x-default"/>
+        <link rel="alternate" href={router.asPath + 'de'} hrefLang="de"/>
       </Head>
       <div className="w-full min-h-full bg-img bg-imgcolor bg-imgheight bg-top max-w-img bg-no-repeat">
         <div className="mx-auto w-3/4 max-w-4xl">
