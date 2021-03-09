@@ -27,7 +27,6 @@ export default function Home({canonicalUrl, ogImagePath}) {
       <Head>
         <title>{t('title')}</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="robots" content="noindex" />
         <meta name="description" content={t('meta_description')} />
         <meta name="author" content={t('meta_author')} />
         <meta property="og:title" content={t('title')} />
