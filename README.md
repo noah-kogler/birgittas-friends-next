@@ -2,7 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+First create `./secret.config.js`
+```
+module.exports = {
+  contactEmail: 'foo@bar.baz'
+};
+```
+
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -35,4 +43,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## Site specific config
 
-Found in ./site-config.js.
+Public config can be found in ./site.config.js.
