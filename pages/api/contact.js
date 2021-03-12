@@ -35,6 +35,7 @@ async function verifyCaptcha(token) {
   try {
     const response = await fetch(url, { method: 'post' });
     const result = await response.json();
+    console.log('verifyCaptcha-score: ', result.score);
     return result.score > .5;
   } catch (error) {
     console.error(result);
