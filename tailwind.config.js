@@ -11,6 +11,34 @@ module.exports = {
   },
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      brown: {
+        light: '#CFCBC9',
+        DEFAULT: '#877E79',
+        dark: '#6C6460',
+      },
+      blue: {
+        light: '#587B97',
+        DEFAULT: '#587B97',
+        dark: '#587B97',
+      },
+      white: {
+        light: '#FDFFFC',
+        DEFAULT: '#FDFFFC',
+        dark: '#FDFFFC',
+      },
+      black: {
+        DEFAULT: '#191516',
+      },
+      purple: {
+        DEFAULT: '#5E3144',
+      },
+      green: {
+        DEFAULT: '#2D4E36',
+      },
+    },
     screens: {
       'md': '947px', // h1 line breaks at 946px
     },

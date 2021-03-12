@@ -2,13 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First create `./secret.config.js`
+Set the following environment variables (e.g. in an `.env.local` file):
 ```
-module.exports = {
-  contactEmail: 'foo@bar.baz'
-};
+CONTACT_EMAIL=foo@bar.baz
+SMTP_SERVER=smtp.bar.baz
+SMTP_PORT=587
+SMTP_EMAIL=foo@bar.baz
+SMTP_PASSWORD=admin1234
+RECAPTCHA_KEY=registeredkey
 ```
-
 
 Then, run the development server:
 

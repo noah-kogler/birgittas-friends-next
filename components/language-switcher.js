@@ -8,7 +8,7 @@ export default function LanguageSwitcher() {
 
   return (
     <div className="float-right mt-2">
-      <Link href='/' locale={router.locale === 'en' ? 'de' : 'en'}>
+      <Link href={router.basePath} locale={router.locale === 'en' ? 'de' : 'en'}>
         <button className="underline">{t('change-locale')}</button>
       </Link>
     </div>

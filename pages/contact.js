@@ -1,15 +1,12 @@
-import Head from 'next/head';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useCommonTranslation } from "../tools/i18n";
+import Head from "next/head";
 import LanguageSwitcher from "../components/language-switcher";
 import Header from "../components/header";
-import Footer from "../components/footer";
-import Description from "../components/articles/description";
-import Trailer from "../components/articles/trailer";
-import Crowdfunding from "../components/articles/crowdfunding";
-import Credits from "../components/articles/credits";
-import { canonicalUrl } from "../site.config";
+import ContactForm from "../components/contact-form";
+import { useRouter } from "next/router";
 import ogImage from "../public/images/sunset.png";
+import { canonicalUrl } from "../site.config";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -20,7 +17,10 @@ export async function getStaticProps({ locale }) {
 }
 
 export default function Home() {
-  const { t } = useCommonTranslation();
+  const {t} = useCommonTranslation();
+  const router = useRouter();
+
+  const path = router.asPath;
 
   return (
     <>
@@ -31,21 +31,18 @@ export default function Home() {
         <meta property="og:title" content={t('title')} />
         <meta property="og:type" content="video.movie" />
         <meta property="og:image" content={canonicalUrl + ogImage} />
-        <link rel="canonical" href={canonicalUrl} />
-        <link rel="alternate" href={canonicalUrl} hrefLang="x-default"/>
-        <link rel="alternate" href={canonicalUrl + '/de'} hrefLang="de"/>
+        <link rel="canonical" href={canonicalUrl + path} />
+        <link rel="alternate" href={canonicalUrl + path} hrefLang="x-default"/>
+        <link rel="alternate" href={canonicalUrl + path + '/de'} hrefLang="de"/>
       </Head>
       <div className="w-full min-h-full bg-img bg-imgcolor bg-imgheight bg-top max-w-img bg-no-repeat">
         <div className="mx-auto w-3/4 max-w-4xl">
           <LanguageSwitcher />
           <Header />
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
-            <Description />
-            <Trailer />
-            <Crowdfunding />
-            <Credits />
+            <ContactForm />
           </main>
-          <Footer />
+          <footer className="pb-20 mt-20 font-text text-center text-sm" />
         </div>
       </div>
     </>
