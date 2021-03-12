@@ -27,7 +27,7 @@ export default async (req, res) => {
 
 async function verifyCaptcha(token) {
   if (!token) {
-    console.error('missing token');
+    console.error('verifyCaptcha - missing token');
     return false;
   }
 
@@ -35,10 +35,10 @@ async function verifyCaptcha(token) {
   try {
     const response = await fetch(url, { method: 'post' });
     const result = await response.json();
-    console.log('verifyCaptcha-score: ', result.score);
-    return result.score > .5;
+    console.log(`verifyCaptcha - score: ${result.score} action: ${result.action}`);
+    return result.score > .5 && result.action === 'contact_form';
   } catch (error) {
-    console.error(result);
+    console.error('verifyCaptcha - error: ', error);
   }
 
   return false;
@@ -65,10 +65,10 @@ function sendMail(fromEmail, fromName, message) {
   return new Promise((resolve) => {
     transporter.sendMail(mailOptions, (err) => {
       if (err) {
-        console.error('sendMail-error: ' . JSON.stringify(err));
+        console.error('sendMail - error: ' . JSON.stringify(err));
         resolve({ error: 'contact_api_sending_failed' });
       } else {
-        console.log('sendMail-success');
+        console.log('sendMail - success');
         resolve({ success: true });
       }
     });

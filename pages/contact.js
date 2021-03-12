@@ -7,6 +7,7 @@ import ContactForm from "../components/contact-form";
 import { useRouter } from "next/router";
 import ogImage from "../public/images/sunset.png";
 import { canonicalUrl } from "../site.config";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -40,7 +41,9 @@ export default function Home() {
           <LanguageSwitcher />
           <Header />
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
-            <ContactForm />
+            <GoogleReCaptchaProvider reCaptchaKey="6LdcxHsaAAAAACeqgJqn5vRil4eSGw_3SZbptzHi" language={router.locale}>
+              <ContactForm />
+            </GoogleReCaptchaProvider>
           </main>
           <footer className="pb-20 mt-20 font-text text-center text-sm" />
         </div>
