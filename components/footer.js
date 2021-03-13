@@ -5,7 +5,7 @@ export default function Footer() {
   const { t } = useCommonTranslation();
 
   return (
-    <footer className="pb-20 mt-20 font-text text-center text-sm">
+    <footer className="pb-20 mt-20 font-text text-center text-m">
       <div className="md:flex">
         <div className="md:w-1/2 md:text-right md:pr-2 font-thin">{t('contact_header')}</div>
         <div className="md:w-1/2 md:text-left md:pr-2">

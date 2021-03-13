@@ -32,19 +32,15 @@ module.exports = {
       black: {
         DEFAULT: '#191516',
       },
-      purple: {
-        DEFAULT: '#5E3144',
-      },
-      green: {
-        DEFAULT: '#2D4E36',
-      },
     },
     screens: {
+      'sm': '450px',
       'md': '947px', // h1 line breaks at 946px
     },
     extend: {
       fontSize: {
         '7xl': '5rem',
+        '4xl': '3rem',
         '2.5xl': '1.7rem',
       },
       fontFamily: {

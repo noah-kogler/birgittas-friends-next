@@ -63,7 +63,7 @@ export default function Credits() {
         Josef Kogler, Noah Kogler, Eva Thue-Vold, Wendy Reid, Margit und Erich Maunz, Markus Vorauer, Maria
         Scheller
       </div>
-      <div className="flex justify-center mt-4">
+      <div className="flex flex-col justify-center sm:flex-row mt-4">
         <a href="https://www.land-oberoesterreich.gv.at/kultur.htm" title="Land Oberösterreich - Kultur">
           <img className="w-24 m-4" src="/images/logos/kultur_land_ooe.png" alt="Land Oberösterreich - Kultur"/>
         </a>
