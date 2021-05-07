@@ -42,8 +42,8 @@ export default function Home() {
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
             <Description />
             <Trailer />
-            <Crowdfunding />
             <Credits />
+            <Crowdfunding />
           </main>
           <Footer />
         </div>
