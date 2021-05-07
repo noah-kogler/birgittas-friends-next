@@ -56,6 +56,7 @@ export default function MakingOf() {
               <MakingOfImage name="making-of-04.jpeg" alt="scene" />
               <MakingOfImage name="making-of-05.jpeg" alt="hug" />
               <MakingOfImage name="making-of-06.jpeg" alt="filming" />
+              <MakingOfImage name="making-of-07.jpeg" alt="post production" />
             </article>
             <p className="mt-10">
               <Link href='/'>{ t('back') }</Link>
