@@ -44,7 +44,7 @@ export default function Home() {
             <Description />
             <Trailer />
             <p className="mt-20">
-              <Link href='/making-of'>{ t('making_of') }</Link>
+              {t('making_of_text')}<Link href='/making-of'>{ t('making_of_link') }</Link>!
             </p>
             <Credits />
             <Crowdfunding />

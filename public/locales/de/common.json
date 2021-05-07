@@ -40,8 +40,12 @@
 
   "crowdfunding_header": "Wir haben es geschafft!",
   "crowdfunding_part_1": "Unsere <0>„Kickstarter” Crowdfunding Kampagne</0> war erfolgreich! Wir können nun die Postproduktion abschließen und unser Film wird im Juni Premiere haben. Wir halten euch hier auf dem Laufenden über die genauen Daten (Update Mitte Mai)!",
-  "crowdfunding_part_2": "Vielen Dank an unsere finanziellen Unterstützer*innen Martin Wiesenberger, Hania Fedorowicz, Gernot Weber, Elisabeth, Lukas Voglmayr, Albert Pappenheim, Christian Wollanek, Sahini Hatixhe, Selina Kohl, Niklas Dutzler, Gebhard Donnenberg, Sergey Kochergan und all die anderen, die gewählt haben nicht namentlich genannt zu werden!",
+  "crowdfunding_support_title": "Vielen Dank an unsere finanziellen Unterstützer*innen:",
+  "crowdfunding_support": "Hilde Weckmann Stiftung, Freunde von Wahat al-Salam - Neve Shalom (<0>Deutschland</0>, <1>Schweiz</1>, <2>Österreich</2>), Patty Ann Woods, Martin Wiesenberger, Hania Fedorowicz, Gernot Weber, Elisabeth, Lukas Voglmayr, Albert Pappenheim, Christian Wollanek, Sahini Hatixhe, Selina Kohl, Niklas Dutzler, Gebhard Donnenberg, Sergey Kochergan und all die anderen, die gewählt haben nicht namentlich genannt zu werden!",
   "crowdfunding_link_title": "Kickstarter Crowdfunding",
+  "crowdfunding_link_german_friends_title": "Deutscher Verein Freunde von Neve Shalom/Wahat al Salam",
+  "crowdfunding_link_swiss_friends_title": "Schweizer Freunde und Freundinnen von Neve Shalom/Wahat al-Salam",
+  "crowdfunding_link_austrian_friends_title": "Österreichische Freunde von Neve Shalom - Wahat al-Salam",
 
   "credits_header": "Credits",
   "credits_concept_production": "Konzept, Produktion:",
@@ -53,7 +57,9 @@
   "credits_post_production": "Post Production Colour:",
   "credits_post_support": "Das „Birgitta's Friends”-Projekt wäre nicht möglich gewesen ohne der Unterstützung von:",
 
-  "making_of": "Making of",
+  "making_of_text": "Wage einen Blick hinter die Kulissen auf unserer ",
+  "making_of_link": "Making of-Seite",
+  "making_of_title": "Making of",
   "making_of_daniel": "Hier erzählt dir Daniel Mark, der Komponist der Musik für „Birgitta's Friends”, tolle Geschichten über die ungewöhnlichen und faszinierenden Instrumente, mit denen er arbeitet.",
   "making_of_fotos": "“Birgitta’s Friends” in Palästina, Israel, Slowakei und Österreich zu filmen, war eine aufregende Reise mit vielen interessanten Begegnungen, vielen Dingen zu entdecken und wundervollem Essen wo auch immer wir waren. Hier findest du einige Fotos dazu:"
 }

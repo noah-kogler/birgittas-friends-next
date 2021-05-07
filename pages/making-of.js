@@ -44,7 +44,7 @@ export default function MakingOf() {
           <Header />
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
             <article>
-              <h3 className="font-header font-bold text-2.5xl">{t('making_of')}</h3>
+              <h3 className="font-header font-bold text-2.5xl">{t('making_of_title')}</h3>
               <p className="mt-20">{t('making_of_daniel')}</p>
               <Vimeo videoId={546443680} />
             </article>

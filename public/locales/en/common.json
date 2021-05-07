@@ -40,8 +40,12 @@
 
   "crowdfunding_header": "We've made it!",
   "crowdfunding_part_1": "Our <0>“Kickstarter” crowdfunding campaign</0> was successful! We can now finalize the post production and our film can have the premiere in June! We will keep you updated on the dates here!",
-  "crowdfunding_part_2": "Thanks to our financial supporters Martin Wiesenberger, Hania Fedorowicz, Gernot Weber, Elisabeth, Lukas Voglmayr, Albert Pappenheim, Christian Wollanek, Sahini Hatixhe, Selina Kohl, Niklas Dutzler, Gebhard Donnenberg, Sergey Kochergan and all the others who chose not to be mentioned by name!",
+  "crowdfunding_support_title": "Thanks to our financial supporters:",
+  "crowdfunding_support": "Hilde Weckmann Stiftung, Friends Associations of Wahat al-Salam - Neve Shalom (<0>Germany</0>, <1>Switzerland</1>, <2>Austria</2>), Patty Ann Woods, Martin Wiesenberger, Hania Fedorowicz, Gernot Weber, Elisabeth, Lukas Voglmayr, Albert Pappenheim, Christian Wollanek, Sahini Hatixhe, Selina Kohl, Niklas Dutzler, Gebhard Donnenberg, Sergey Kochergan and all the others who chose not to be mentioned by name!",
   "crowdfunding_link_title": "Kickstarter crowdfunding",
+  "crowdfunding_link_german_friends_title": "Der deutsche Verein Freunde von Neve Shalom/Wahat al Salam",
+  "crowdfunding_link_swiss_friends_title": "Schweizer Freunde und Freundinnen von Neve Shalom/Wahat al-Salam",
+  "crowdfunding_link_austrian_friends_title": "Österr. Freunde und Freundinnen von Wahat al-Salam/Neve Shalom",
 
   "credits_header": "Credits",
   "credits_concept_production": "Concept, Production:",
@@ -53,7 +57,9 @@
   "credits_post_production": "Post Production Colour:",
   "credits_post_support": "The “Birgitta's Friends“ project would not have been possible without a lot of support:",
 
-  "making_of": "Making of",
+  "making_of_text": "Look behind the scenes on our ",
+  "making_of_link": "making of page",
+  "making_of_title": "Making of",
   "making_of_daniel": "Listen to Daniel Mark, the composer of the music for “Birgitta's Friends” tell you a wonderful story about the interesting and unusual instruments he used!",
   "making_of_fotos": "Filming “Birgitta’s Friends” in Palestine, Israel, Slovakia and Austria was an exiting journey with so many interesting encounters, things to see and wonderful food wherever we went. See some photos of the process!"
 }
