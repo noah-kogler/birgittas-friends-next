@@ -7,6 +7,8 @@
 
   "change-locale": "auf Deutsch",
 
+  "back": "back to main page",
+
   "contact_header": "Contact",
   "contact_name": "Christian Kogler",
   "contact_company": "Pädagogische Hochschule Oberösterreich",
@@ -49,5 +51,9 @@
   "credits_subtitles": "Subtitles:",
   "credits_music": "Music:",
   "credits_post_production": "Post Production Colour:",
-  "credits_post_support": "The “Birgitta's Friends“ project would not have been possible without a lot of support:"
+  "credits_post_support": "The “Birgitta's Friends“ project would not have been possible without a lot of support:",
+
+  "making_of": "Making of",
+  "making_of_daniel": "Listen to Daniel Mark, the composer of the music for “Birgitta's Friends” tell you a wonderful story about the interesting and unusual instruments he used!",
+  "making_of_fotos": "Filming “Birgitta’s Friends” in Palestine, Israel, Slovakia and Austria was an exiting journey with so many interesting encounters, things to see and wonderful food wherever we went. See some photos of the process!"
 }

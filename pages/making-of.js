@@ -1,14 +1,15 @@
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useCommonTranslation } from "../tools/i18n";
+import { useRouter } from "next/router";
 import Head from "next/head";
+import { canonicalUrl } from "../site.config";
+import ogImage from "../public/images/sunset.png";
 import LanguageSwitcher from "../components/language-switcher";
 import Header from "../components/header";
-import ContactForm from "../components/contact-form";
-import { useRouter } from "next/router";
-import ogImage from "../public/images/sunset.png";
-import { canonicalUrl } from "../site.config";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 import Link from "next/link";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Footer from "../components/footer";
+import Vimeo from "../components/vimeo";
+import MakingOfImage from "../components/making-of-image";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -18,7 +19,7 @@ export async function getStaticProps({ locale }) {
   };
 }
 
-export default function Home() {
+export default function MakingOf() {
   const {t} = useCommonTranslation();
   const router = useRouter();
 
@@ -42,12 +43,25 @@ export default function Home() {
           <LanguageSwitcher />
           <Header />
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
-            <GoogleReCaptchaProvider reCaptchaKey="6LdcxHsaAAAAACeqgJqn5vRil4eSGw_3SZbptzHi" language={router.locale}>
-              <ContactForm />
+            <article>
+              <h3 className="font-header font-bold text-2.5xl">{t('making_of')}</h3>
+              <p className="mt-20">{t('making_of_daniel')}</p>
+              <Vimeo videoId={546443680} />
+            </article>
+            <article>
+              <p className="mt-20">{t('making_of_fotos')}</p>
+              <MakingOfImage name="making-of-01.jpeg" alt="camera" />
+              <MakingOfImage name="making-of-02.jpeg" alt="huge story" />
+              <MakingOfImage name="making-of-03.jpeg" alt="filming" />
+              <MakingOfImage name="making-of-04.jpeg" alt="scene" />
+              <MakingOfImage name="making-of-05.jpeg" alt="hug" />
+              <MakingOfImage name="making-of-06.jpeg" alt="filming" />
+            </article>
+            <p className="mt-10">
               <Link href='/'>{ t('back') }</Link>
-            </GoogleReCaptchaProvider>
+            </p>
           </main>
-          <footer className="pb-20 mt-20 font-text text-center text-sm" />
+          <Footer />
         </div>
       </div>
     </>
