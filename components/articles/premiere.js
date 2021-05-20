@@ -8,7 +8,7 @@ export default function Premiere() {
     <article id="premiere" className="mt-20">
       <h3 className="font-header font-bold text-2.5xl">
         <Trans i18nKey="premiere_title">
-          <a href="https://www.crossingeurope.at/" />
+          <a href="https://www.crossingeurope.at/film/birgittas_friends" />
         </Trans>
       </h3>
       <p className="mt-6">
@@ -20,7 +20,7 @@ export default function Premiere() {
         <span className="italic text-sm">{t('premiere_info')}</span>
       </p>
       <p>
-        <a href="https://www.crossingeurope.at/information/ticketinfos">{t('premiere_tickets')}</a>
+        <a href="https://ticketing.crossingeurope.at/seatselection/?show_id=101087&location_id=11">{t('premiere_tickets')}</a>
       </p>
     </article>
   );
