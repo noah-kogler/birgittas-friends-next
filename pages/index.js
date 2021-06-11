@@ -10,8 +10,8 @@ import Crowdfunding from "../components/articles/crowdfunding";
 import Credits from "../components/articles/credits";
 import { canonicalUrl } from "../site.config";
 import ogImage from "../public/images/sunset.png";
-import Link from "next/link";
 import Premiere from "../components/articles/premiere";
+import MakingOf from "../components/articles/making-of";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -43,11 +43,9 @@ export default function Home() {
           <Header />
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
             <Description />
-            <Premiere />
             <Trailer />
-            <p className="mt-20">
-              {t('making_of_text')}<Link href='/making-of'>{ t('making_of_link') }</Link>!
-            </p>
+            <Premiere />
+            <MakingOf />
             <Credits />
             <Crowdfunding />
           </main>

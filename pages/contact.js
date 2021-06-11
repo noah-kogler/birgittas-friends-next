@@ -44,7 +44,9 @@ export default function Home() {
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
             <GoogleReCaptchaProvider reCaptchaKey="6LdcxHsaAAAAACeqgJqn5vRil4eSGw_3SZbptzHi" language={router.locale}>
               <ContactForm />
-              <Link href='/'>{ t('back') }</Link>
+              <p className="mt-10">
+                <Link href='/'>{ t('back') }</Link>
+              </p>
             </GoogleReCaptchaProvider>
           </main>
           <footer className="pb-20 mt-20 font-text text-center text-sm" />

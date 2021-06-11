@@ -10,12 +10,10 @@ export default function Crowdfunding() {
       <p className="mt-10">
         <Trans i18nKey="crowdfunding_part_1">
           <a href="http://kck.st/2ZV4ZHD" title={t('crowdfunding_link_title')}/>
-          <br />
-          <a href="#premiere" />
         </Trans>
       </p>
       <p>
-        <div className="mt-10 font-thin">
+        <div className="mt-4 font-thin">
           {t('crowdfunding_support_title')}
         </div>
         <div className="mt-4">
