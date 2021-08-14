@@ -19,9 +19,6 @@ export default function Premiere() {
         width={896}
         height={597}
       />
-      <p className="mt-6">
-        {t('premiere_further_dates')}
-      </p>
     </article>
   );
 }
