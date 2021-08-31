@@ -1,9 +1,7 @@
 import { Trans } from "next-i18next";
-import { useCommonTranslation } from "../../tools/i18n";
+import Image from "next/image";
 
 export default function Freistadt() {
-  const { t } = useCommonTranslation();
-
   return (
     <article id="freistadt" className="mt-20">
       <h3 className="font-header font-bold text-2.5xl">
@@ -12,16 +10,14 @@ export default function Freistadt() {
         </Trans>
       </h3>
       <p className="mt-6">
-        <span className="font-bold">{t('freistadt_date')}</span><br/>
-        <Trans i18nKey="freistadt_location">
-          <a href="https://www.kino-freistadt.at/" />
-        </Trans>
-        <br/>
-        <span className="italic text-sm">{t('freistadt_info')}</span>
+        <Trans i18nKey="freistadt_text" />
       </p>
-      <p>
-        <a href="https://reservierung.kino-freistadt.at/">{t('freistadt_ticktes')}</a>
-      </p>
+      <Image
+        src="/images/freistadt.jpg"
+        alt="Freistadt"
+        width={896}
+        height={597}
+      />
     </article>
   );
 }

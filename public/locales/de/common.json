@@ -34,11 +34,8 @@
   "contact_api_invalid_captcha": "Sorry, Sie wurden von reCAPTCHA als Bot erkannt.",
   "contact_api_email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein!",
 
-  "freistadt_title": "Nächste Aufführung beim Filmfestival „<0>Der Neue Heimatfilm</0>” in Freistadt",
-  "freistadt_date": "Sa, 28. August, 15:00 Uhr",
-  "freistadt_location": "<0>Kino Freistadt</0>, Kino 1",
-  "freistadt_info": "OmdtU, 2021, AT/IL/SK, 70 min",
-  "freistadt_ticktes": "Karten",
+  "freistadt_title": "Filmfestival „<0>Der Neue Heimatfilm</0>” in Freistadt",
+  "freistadt_text": "Danke, Filmfestival Freistadt, für die Teilnahme an dem großartigen Event!",
 
   "premiere_title": "Premiere beim Crossing Europe Filmfestival",
   "premiere_text": "Wir sind glücklich über die erfolgreiche Weltpremiere von „Birgitta's Friends” beim <0>Crossing Europe Film Festival 2021</0>! Das Publikum im ausverkauften Saal gab uns das Gefühl etwas Besonderes geschafft zu haben und das anschließende Filmgepräch war anregend und interessant. Danke schön, Crossing Europe, für diese wunderbare Gelegenheit!",
