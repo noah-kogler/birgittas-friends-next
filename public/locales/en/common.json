@@ -34,6 +34,9 @@
   "contact_api_invalid_captcha": "Sorry, you have been categorized as bot by reCAPTCHA.",
   "contact_api_email_invalid": "Please enter a valid e-mail address!",
 
+  "next_screening_title": "Next screening",
+  "next_screening_text": "On <0>21.10.2021</0> at <1>20:00</1> „Birgitta's Friends” will be shown in <2>Moviemento Linz</2> as part of <3>Südwind im Kino</3>.",
+
   "freistadt_title": "Filmfestival „<0>Der Neue Heimatfilm</0>” in Freistadt",
   "freistadt_text": "Thank you, Filmfestival Freistadt, for letting us being part in your great event!",
 
