@@ -56,7 +56,7 @@ export default function Credits() {
         {t('credits_post_support')}
       </div>
       <div className="mt-4">
-        Birgitta Kogler, Noah Stern, Bob Mark, Michal Mark, Sigalith, Mohammed Jaradat, Ingrid Jaradat, Tomer
+        Birgitta Kogler, Noah Stern, Bob Mark, Michal Mark, Sigalith, Muhammad Jaradat, Ingrid Jaradat, Tomer
         Blayer,
         Christoph Haderer, Roland Freinschlag, <a href="https://www.nataliehalla.com/" title="nataliehalla.com">Natalie
         Halla</a>,
