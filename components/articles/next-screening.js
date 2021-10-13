@@ -11,9 +11,12 @@ export default function NextScreening() {
         <Trans i18nKey="next_screening_text">
           <span className="font-bold" />
           <span className="font-bold" />
+          <span className="font-bold" />
           <a href="https://www.suedwind.at/oberoesterreich/angebote/suedwind-im-kino/" />
-          <a href="https://moviemento.at/" className="font-bold" />
         </Trans>
+      </p>
+      <p className="mt-6">
+        <a href="https://moviemento.at/?site=movie&mId=6247#tab-2"><Trans i18nKey="next_screening_details" /></a>
       </p>
     </article>
   );
