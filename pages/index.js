@@ -13,7 +13,6 @@ import ogImage from "../public/images/sunset.png";
 import Premiere from "../components/articles/premiere";
 import MakingOf from "../components/articles/making-of";
 import Freistadt from "../components/articles/freistadt";
-import NextScreening from "../components/articles/next-screening";
 import Podcast from "../components/articles/podcast";
 
 export async function getStaticProps({ locale }) {
@@ -47,7 +46,6 @@ export default function Home() {
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
             <Description />
             <Trailer />
-            <NextScreening />
             <Podcast />
             <Freistadt />
             <Premiere />
