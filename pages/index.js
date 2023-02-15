@@ -14,6 +14,7 @@ import Premiere from "../components/articles/premiere";
 import MakingOf from "../components/articles/making-of";
 import Freistadt from "../components/articles/freistadt";
 import Podcast from "../components/articles/podcast";
+import NextScreening from "../components/articles/next-screening";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -46,6 +47,7 @@ export default function Home() {
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
             <Description />
             <Trailer />
+            <NextScreening />
             <Podcast />
             <Freistadt />
             <Premiere />
