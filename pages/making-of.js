@@ -8,8 +8,8 @@ import Header from "../components/header";
 import Link from "next/link";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Footer from "../components/footer";
-import Vimeo from "../components/vimeo";
 import MakingOfImage from "../components/making-of-image";
+import Echo360 from "../components/echo360";
 
 export async function getStaticProps({ locale }) {
   return {
@@ -46,7 +46,7 @@ export default function MakingOf() {
             <article>
               <h3 className="font-header font-bold text-2.5xl">{t('making_of_title')}</h3>
               <p className="mt-20">{t('making_of_daniel')}</p>
-              <Vimeo videoId={546443680} />
+              <Echo360 videoId="e3abf362-496e-4b7b-b8c8-d8dfd3d270f5" />
             </article>
             <article>
               <p className="mt-20">{t('making_of_fotos')}</p>
