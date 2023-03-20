@@ -15,7 +15,7 @@ export default function NextScreening() {
         </Trans>
       </p>
       <p className="mt-6">
-        <a href="https://www.kino-steyr.at/vorschau/brigittas-friends"><Trans i18nKey="next_screening_details" /></a>
+        <a href="https://www.kino-steyr.at/filmbeschreibung/brigittas-friends"><Trans i18nKey="next_screening_details" /></a>
       </p>
     </article>
   );
