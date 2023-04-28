@@ -24,7 +24,7 @@ export default function Steyr() {
         </p>
         <Image
           src={`/images/steyr.png`}
-          alt={alt}
+          alt="Steyr"
           width={896}
           height={417}
         />
