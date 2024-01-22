@@ -11,11 +11,8 @@ export default function NextScreening() {
         <Trans i18nKey="next_screening_text">
           <span className="font-bold" />
           <span className="font-bold" />
-          <a href="https://www.dieselkino.at/index.php?cine=09&id=709" title={t('next_screening_location')} className="font-bold" />
+          <a href="https://www.daskino.at/" className="font-bold" />
         </Trans>
-      </p>
-      <p>
-        <a href="https://www.dieselkino.at/index.php?cine=09&id=204&movie=8452&source=500"><Trans i18nKey="next_screening_details" /></a>
       </p>
     </article>
   );

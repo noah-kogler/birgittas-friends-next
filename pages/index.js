@@ -48,7 +48,7 @@ export default function Home() {
           <main className="mt-460px md:mt-560px text-center font-text text-xl">
             <Description />
             <Trailer />
-            {/*<NextScreening />*/}
+            <NextScreening />
             <Steyr />
             <Podcast />
             <Freistadt />
