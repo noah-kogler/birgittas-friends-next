@@ -14,6 +14,7 @@ export default function NextScreening() {
           <a href="https://www.daskino.at/" className="font-bold" />
         </Trans>
       </p>
+      <p><a href="https://www.daskino.at/film/birgittas-friends"><Trans i18nKey="next_screening_tickets" /></a></p>
     </article>
   );
 }
